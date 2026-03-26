@@ -8,5 +8,8 @@ mentoria_Academica = {
   AreadeAtuação01: Progamação,
   NomeCordenador02: Tiago,
   AreadeAtuação02: Desenvolvimentodesistemas,
-  limitedeVagas: 50,
-                                };
+  limitedeVagas: 30,
+};
+let new_user = prompt(" Registre um novo usuario R: " )
+let new_user02 = prompt(" Registre sua área de atuação R: ")
+
