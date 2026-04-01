@@ -6,7 +6,7 @@ let number = 0;
 let number02 = 0;
 let result = 0;
 let escolha;
-function Adição(number, number02) {
+function Adição() {
   number = parseFloat(prompt(" Digite um valor "));
   number02 = parseFloat(prompt(" Digite outro valor "));
   result = number + number02
@@ -19,15 +19,12 @@ function Adição(number, number02) {
 //divisao
 
 
-let number03 = 0;
-let number04 = 0;
-let resultdivisao = 0;
-
-function Divisão(number03, number04) {
-number03 = parseFloat(prompt(" Digite um numero "))
-number04 = parseFloat(prompt(" Digite outro valor "))
+function Divisão() {
+let number03 = parseFloat(prompt(" Digite um numero "))
+let number04 = parseFloat(prompt(" Digite outro valor "))
 result = number03 / number04
 console.log(`${number03} / ${number04} = ${result}`);
+return
 }
 //Divisão()
 //console.log(result)
@@ -35,14 +32,13 @@ console.log(`${number03} / ${number04} = ${result}`);
 
 //multiplicação
 
-let number05 = 0;
-let number06 = 0;
-let resultmult = 0;
 
-function multiplicação(number05, number06) {
-number05 = parseFloat(prompt(" digite um valor "))
-number06 = parseFloat(prompt(" digite outro valor "))
-resultmult = number05 * number06
+
+function multiplicação() {
+let number05 = parseFloat(prompt(" digite um valor "))
+let number06 = parseFloat(prompt(" digite outro valor "))
+let resultmult = number05 * number06
+console.log(`${number05} * ${number06} = ${resultmult}`);
 
 }
 //multiplicação()
@@ -50,28 +46,28 @@ resultmult = number05 * number06
 
 //subtração
 
-let number07 = 0;
-let number08 = 0;
+
 let resultsubt = 0;
 
-function subtração(number07,number08){
-number07 = parseFloat(prompt(" Digite um valor "))
-number08 = parseFloat(prompt(" Digite outro valor "))
+function subtração(){
+let number07 = parseFloat(prompt(" Digite um valor "))
+let number08 = parseFloat(prompt(" Digite outro valor "))
 resultsubt = number07 - number08
+console.log(`${number07} - ${number08} = ${resultsubt}`);
 }
 //subtração()
 //console.log(resultsubt)
 
 
 //porcentagem
-let number09 = 0;
-let number10 = 0;
+
 let resultporc = 0;
 
-function porcentagem( number09, number10) {
-    number09 = parseFloat(prompt(" Digite um valor "))
-    number10 = parseFloat(prompt(" Digite outro valor "))
+function porcentagem() {
+    let number09 = parseFloat(prompt(" Digite um valor "))
+    let number10 = parseFloat(prompt(" Digite outro valor "))
     resultporc = (number09*number10) /100
+    console.log(`${number09} % ${number10} = ${resultporc}`); 
 }
 //porcentagem()
 //console.log(resultporc)
