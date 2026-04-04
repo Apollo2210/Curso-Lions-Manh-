@@ -33,19 +33,15 @@ return
 //multiplicação
 
 
-function multiplicação(number05, number06) {
-number05 = parseFloat(prompt(" digite um valor "))
-number06 = parseFloat(prompt(" digite outro valor "))
-resultmult = number05 * number06
- console.log(`${number05} * ${number06} = ${resultmult}`);
-
 function multiplicação() {
 let number05 = parseFloat(prompt(" digite um valor "))
 let number06 = parseFloat(prompt(" digite outro valor "))
-let resultmult = number05 * number06
-console.log(`${number05} * ${number06} = ${resultmult}`);
-
+resultmult = number05 * number06
+ console.log(`${number05} * ${number06} = ${resultmult}`);
 }
+
+
+
 //multiplicação()
 //console.log(resultmult)
 
@@ -92,6 +88,7 @@ console.log(" 5-Porcentagem ")
 console.log(" 0-Sair")
 
 
+
 escolha = parseInt(prompt(" Qual você deseja ? R: "))
 
 switch (escolha) {
@@ -118,4 +115,4 @@ switch (escolha) {
     default: 
     console.log(" Seleção Indisponivel tente outro número de 1 até 5 ou 0 para sair ")
         break;
-}} while (escolha !== 0);
+}} while (escolha !== 0);   
