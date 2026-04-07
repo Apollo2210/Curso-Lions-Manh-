@@ -11,13 +11,13 @@ import conta_multiplicação from "./multiplicação.js"
 import conta_subtração from "./subtração.js"
 
 import conta_porcentagem from "./porcentagem.js"
-import Adição from "./adição.js";
+
 
 let resultado = 0
 let numero = 0
 
 let escolha = 0
-
+let contador =true
 do {
 console.log("---Seja Bem Vindo a Calculadora---");
 console.log(" Qual opção você deseja usar ")
@@ -30,6 +30,10 @@ console.log(" 0-Sair")
 
 
 escolha = parseInt(prompt(" Qual você deseja ? R: "))
+if(contador){
+    resultado = parseFloat(prompt("digite o primeiro valor"))
+    contador=false
+}
 
 switch (escolha) {
     case 1:
@@ -40,19 +44,29 @@ switch (escolha) {
     break;
     
     case 2:
-        conta_divisao()
+        
+        numero = parseFloat(prompt(" Qual numero você deseja ? R: "))
+        resultado =conta_divisao(resultado,numero)
+        console.log(resultado);
     break;
     
     case 3: 
-        conta_multiplicação()
+        numero = parseFloat(prompt("Qual numero você deseja ? R: "))
+        resultado =conta_multiplicação(resultado,numero)
+        console.log(resultado);
     break;
 
     case 4: 
         conta_subtração()
+        numero = parseFloat(prompt(" Qual numero você deseja ? R: "))
+        resultado= conta_subtração(resultado,numero)
+        console.log(resultado);
     break;
 
     case 5: 
-        conta_porcentagem()
+  numero = parseFloat(prompt(" Qual numero você deseja usar ? R: "))
+  resultado = conta_porcentagem(resultado,numero)
+  console.log(resultado);
     break;
 
     default: 
