@@ -9,7 +9,7 @@ function calcularMediana() {
 
   if (numeros.length % 2 == 0) {
     mediana = (numeros[numeros.length / 2] + numeros[numeros.length / 2 - 1]) / 2
-      (numeros[numeros.length / 2] + numeros[numeros.length / 2 - 1]) / 2;
+      
   } else {
     mediana = mediana = numeros[Math.floor(numeros.length / 2)];
   }
