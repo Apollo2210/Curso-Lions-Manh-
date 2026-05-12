@@ -11,7 +11,9 @@
   "description": "",
   "dependencies": {
     "-": "^0.0.1",
+    "express": "^5.2.1",
     "prompt-sync": "^4.2.0",
+    "prompty": "^0.0.3",
     "y": "^0.3.2"
   }
 }
