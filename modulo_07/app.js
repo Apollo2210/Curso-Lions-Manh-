@@ -4,7 +4,7 @@ const porta = 3000; // Define o endereço (número da lanchonete)
 
 // ROTA 1: A entrada da lanchonete
 app.get('/', (req, res) => {
-  res.send('Bem-vindo à nossa lanchonete digital!');
+  res.send('lanchonete!');
 });
 
 // ROTA 2: O cardápio
