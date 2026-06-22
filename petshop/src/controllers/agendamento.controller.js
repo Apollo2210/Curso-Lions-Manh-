@@ -3,7 +3,7 @@ import AgendamentoService from "../services/agendamento.service";
 async function cadastrar(req, res ,next ) {
 try {
     const {nomePet, especie, nomeDono, telefoneDono, servico , data} = req.body;
-    const novoAgendamento = AgendamentoRepository.criar({
+    const novoAgendamento = await AgendamentoRepository.criar({
       nomePet,
       especie,
       nomeDono,

@@ -56,7 +56,7 @@ async function cadastrar({nomePet,especie, nomeDono,telefoneDono,servico, data, 
     
 }
 
- const novoAgendamento = AgendamentoRepository.criar({
+ const Agendamento = await AgendamentoRepository.criar({
       nomePet,
       especie,
       nomeDono,
