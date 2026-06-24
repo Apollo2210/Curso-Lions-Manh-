@@ -1,9 +1,9 @@
-import AgendamentoService from "../services/agendamento.service";
+import AgendamentoService from "../services/agendamento.service.js";
 
 async function cadastrar(req, res ,next ) {
 try {
     const {nomePet, especie, nomeDono, telefoneDono, servico , data} = req.body;
-    const novoAgendamento = await AgendamentoRepository.criar({
+    const novoAgendamento = await AgendamentoService.cadastrar({
       nomePet,
       especie,
       nomeDono,

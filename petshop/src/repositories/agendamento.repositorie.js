@@ -1,11 +1,11 @@
-import agendamento from "../models/agendamento.js";
+import Agendamento from "../models/agendamento.js";
 
 async function criar(dadosAgendamento) {
-return agendamento.create(dadosAgendamento);
-
+    return Agendamento.create(dadosAgendamento);
 }
-const AgendamentoRepository = {
 
+const AgendamentoRepository = {
     criar
 };
-export default AgendamentoRepository
+
+export default AgendamentoRepository;

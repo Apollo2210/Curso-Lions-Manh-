@@ -1,5 +1,5 @@
 import express from "express";
-import agendamentoRoutes from "./routes/agendamento.routes";
+import agendamentoRoutes from "./routes/agendamento.routes.js";
 
 const app = express();
 
@@ -13,3 +13,4 @@ app.get("/", (req, res) => {
 app.use(agendamentoRoutes);
 
 export default app;
+

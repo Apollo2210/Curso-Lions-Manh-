@@ -1,6 +1,6 @@
-import AgendamentoRepository from "../repositories/agendamento.repositorie";
+import AgendamentoRepository from "../repositories/agendamento.repositorie.js";
 
-async function cadastrar({nomePet,especie, nomeDono,telefoneDono,servico, data, valor,especie,servico}) {
+async function cadastrar({nomePet,especie, nomeDono,telefoneDono,servico, data}) {
 
     let valor = 0;
     if (especie == "Cão") {
@@ -65,12 +65,11 @@ async function cadastrar({nomePet,especie, nomeDono,telefoneDono,servico, data, 
       data,
       valor,
     });
-return AgendamentoService;
+
+   
 
 const AgendamentoService = {
     cadastrar
 };
-
-
 
 export default AgendamentoService;
