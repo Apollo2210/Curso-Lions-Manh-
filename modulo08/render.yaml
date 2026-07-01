@@ -3,14 +3,14 @@ services:
     name: petshop
     runtime: node
     plan: free
-    buildCommand: "npminstall"
-    startCommand: "npmstart"
+    buildCommand: "npm install"
+    startCommand: "npm start"
     autoDeploy: true
     envVars:
-      -key: NODE_ENV
-      value: "production"
-      key: MONGO_URI
-      sync: false
+      - key: NODE_ENV
+        value: "production"
+      - key: MONGO_URI
+        sync: false
 ##: JWT_SECRET
 #enerateValue: true
 #key: JWT_EXPIRES_IN
