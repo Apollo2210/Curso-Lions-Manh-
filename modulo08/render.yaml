@@ -9,11 +9,11 @@ autoDeploy: true
 envVars:
 -key: NODE_ENV
 value: "production"
--key: MONGO_URI
+key: MONGO_URI
 sync: false
--key: JWT_SECRET
-generateValue: true
--key: JWT_EXPIRES_IN
-value: "id"
--key: BCRYPT_SALT_ROUNDS
-value: "10"
+##: JWT_SECRET
+#enerateValue: true
+#key: JWT_EXPIRES_IN
+#alue: "id"
+#key: BCRYPT_SALT_ROUNDS
+##lue: "10"
